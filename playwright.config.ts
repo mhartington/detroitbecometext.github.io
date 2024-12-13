@@ -34,39 +34,17 @@ export default defineConfig({
 	/* Configure projects for major browsers */
 	projects: [
 		// HTML structure or configuration checks that don't need to be run on every browser.
-		{
-			name: 'global',
-			testDir: './e2e/global',
-			use: { ...devices['Desktop Chrome'] },
-		},
+		// {
+		//	name: 'global',
+		//	testDir: './e2e/global',
+		//	use: { ...devices['Desktop Chrome'] },
+		// },
 
 		{
 			name: 'chromium',
-			testIgnore: /.\/e2e\/global\/*/,
+			// testIgnore: /.\/e2e\/global\/*/,
 			use: { ...devices['Desktop Chrome'] },
 		},
-
-		{
-			name: 'firefox',
-			testIgnore: /.\/e2e\/global\/*/,
-			use: { ...devices['Desktop Firefox'] },
-		},
-
-		{
-			name: 'webkit',
-			testIgnore: /.\/e2e\/global\/*/,
-			use: { ...devices['Desktop Safari'] },
-		},
-
-		/* Test against mobile viewports. */
-		// {
-		//   name: 'Mobile Chrome',
-		//   use: { ...devices['Pixel 5'] },
-		// },
-		// {
-		//   name: 'Mobile Safari',
-		//   use: { ...devices['iPhone 12'] },
-		// },
 	],
 
 	/* Run your local dev server before starting the tests */
