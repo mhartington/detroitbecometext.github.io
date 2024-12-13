@@ -26,19 +26,18 @@ type ContactForm = {
 };
 
 @Component({
-	standalone: true,
-	imports: [
-		CommonModule,
-		FontAwesomeModule,
-		ReactiveFormsModule,
-		MatCardModule,
-		MatFormFieldModule,
-		MatInputModule,
-		MatButtonModule,
-	],
-	templateUrl: './contact.component.html',
-	styleUrl: './contact.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CommonModule,
+        FontAwesomeModule,
+        ReactiveFormsModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+    ],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactComponent {
 	private readonly endpoint: string = 'https://formspree.io/f/xleoogop';

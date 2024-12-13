@@ -10,12 +10,11 @@ import { LanguagePickerService } from '../../shared/services/language-picker.ser
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-	selector: 'app-lang-picker',
-	standalone: true,
-	imports: [CommonModule, MatTooltipModule],
-	templateUrl: './lang-picker.component.html',
-	styleUrl: './lang-picker.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-lang-picker',
+    imports: [CommonModule, MatTooltipModule],
+    templateUrl: './lang-picker.component.html',
+    styleUrl: './lang-picker.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LangPickerComponent {
 	@Input({ required: true })

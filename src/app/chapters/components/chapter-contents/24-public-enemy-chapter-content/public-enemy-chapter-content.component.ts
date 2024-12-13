@@ -20,30 +20,27 @@ import { UnlockType } from '../../../../shared/enums/unlock-type.enum';
 import { ChapterTocService } from '../../../../shared/services/chapter-toc.service';
 import { ObservationComponent } from '../../../../shared/components/observation/observation.component';
 import { ObservationItemComponent } from '../../../../shared/components/observation-item/observation-item.component';
-import { UnusedContentComponent } from '../../../../shared/components/unused-content/unused-content.component';
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		RouterLink,
-		UnlockConditionComponent,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		UnusedContentComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './public-enemy-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        RouterLink,
+        UnlockConditionComponent,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './public-enemy-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PublicEnemyChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

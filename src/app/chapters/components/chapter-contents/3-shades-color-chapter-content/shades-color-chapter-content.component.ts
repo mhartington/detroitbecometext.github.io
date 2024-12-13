@@ -10,11 +10,10 @@ import { TranslationService } from '../../../../shared/services/translation.serv
 import { ChapterTocService } from '../../../../shared/services/chapter-toc.service';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [CommonModule, DialogueLineComponent, TranslocoModule],
-	templateUrl: './shades-color-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [CommonModule, DialogueLineComponent, TranslocoModule],
+    templateUrl: './shades-color-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShadesColorChapterContentComponent implements AfterViewInit {
 	constructor(

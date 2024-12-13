@@ -22,24 +22,23 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnusedContentComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		UnlockConditionComponent,
-		RouterLink,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './crossroads-markus-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnusedContentComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        UnlockConditionComponent,
+        RouterLink,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './crossroads-markus-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CrossroadsMarkusChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

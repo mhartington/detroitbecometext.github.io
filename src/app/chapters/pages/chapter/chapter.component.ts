@@ -25,22 +25,21 @@ import { TextDirectionService } from '../../../shared/services/text-direction.se
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-	standalone: true,
-	providers: [ChapterNavigationService],
-	imports: [
-		CommonModule,
-		MatCardModule,
-		MatDividerModule,
-		ChapterNavComponent,
-		TranslocoModule,
-		PortalModule,
-		ChapterTocComponent,
-		FontAwesomeModule,
-		MatTooltipModule,
-	],
-	templateUrl: './chapter.component.html',
-	styleUrl: './chapter.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [ChapterNavigationService],
+    imports: [
+        CommonModule,
+        MatCardModule,
+        MatDividerModule,
+        ChapterNavComponent,
+        TranslocoModule,
+        PortalModule,
+        ChapterTocComponent,
+        FontAwesomeModule,
+        MatTooltipModule,
+    ],
+    templateUrl: './chapter.component.html',
+    styleUrl: './chapter.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChapterComponent {
 	@ViewChild('tocButton', { read: ElementRef })

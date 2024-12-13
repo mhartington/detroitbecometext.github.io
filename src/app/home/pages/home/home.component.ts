@@ -36,24 +36,23 @@ type AdditionalLink = {
 };
 
 @Component({
-	standalone: true,
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		CardContainerComponent,
-		CardComponent,
-		FontAwesomeModule,
-		ThemeToggleComponent,
-		LangPickerComponent,
-		LangPickerToggleComponent,
-		MatCardModule,
-		FooterComponent,
-		TranslocoModule,
-		MatExpansionModule,
-	],
-	templateUrl: './home.component.html',
-	styleUrl: './home.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        CardContainerComponent,
+        CardComponent,
+        FontAwesomeModule,
+        ThemeToggleComponent,
+        LangPickerComponent,
+        LangPickerToggleComponent,
+        MatCardModule,
+        FooterComponent,
+        TranslocoModule,
+        MatExpansionModule,
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent {
 	@ViewChild('langToggle', { read: ElementRef })

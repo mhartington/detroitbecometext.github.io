@@ -2,12 +2,11 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-	selector: 'app-observation-item',
-	standalone: true,
-	imports: [CommonModule],
-	templateUrl: './observation-item.component.html',
-	styleUrl: './observation-item.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-observation-item',
+    imports: [CommonModule],
+    templateUrl: './observation-item.component.html',
+    styleUrl: './observation-item.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ObservationItemComponent {
 	@Input({ required: true }) title: string = '';

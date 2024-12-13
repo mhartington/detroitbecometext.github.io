@@ -24,26 +24,25 @@ import { ObservationComponent } from '../../../../shared/components/observation/
 import { ObservationItemComponent } from '../../../../shared/components/observation-item/observation-item.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnlockConditionComponent,
-		RelationComponent,
-		ConditionedContentComponent,
-		UnusedContentComponent,
-		RouterLink,
-		TranslocoModule,
-		ConditionGroupComponent,
-		ObservationComponent,
-		ObservationItemComponent,
-	],
-	templateUrl: './last-chance-connor-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnlockConditionComponent,
+        RelationComponent,
+        ConditionedContentComponent,
+        UnusedContentComponent,
+        RouterLink,
+        TranslocoModule,
+        ConditionGroupComponent,
+        ObservationComponent,
+        ObservationItemComponent,
+    ],
+    templateUrl: './last-chance-connor-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LastChanceConnorChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

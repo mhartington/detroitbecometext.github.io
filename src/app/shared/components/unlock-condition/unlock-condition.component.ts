@@ -10,12 +10,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-	selector: 'app-unlock-condition',
-	standalone: true,
-	imports: [CommonModule, FontAwesomeModule],
-	templateUrl: './unlock-condition.component.html',
-	styleUrl: './unlock-condition.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-unlock-condition',
+    imports: [CommonModule, FontAwesomeModule],
+    templateUrl: './unlock-condition.component.html',
+    styleUrl: './unlock-condition.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UnlockConditionComponent {
 	@Input({ required: true }) unlockType: UnlockType | null = null;

@@ -24,25 +24,24 @@ import { UnusedContentComponent } from '../../../../shared/components/unused-con
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnlockConditionComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		UnusedContentComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './the-hostage-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnlockConditionComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        UnusedContentComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './the-hostage-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TheHostageChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

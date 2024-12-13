@@ -25,26 +25,25 @@ import { ObservationItemComponent } from '../../../../shared/components/observat
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		UnlockConditionComponent,
-		UnusedContentComponent,
-		RouterLink,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './russian-roulette-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        UnlockConditionComponent,
+        UnusedContentComponent,
+        RouterLink,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './russian-roulette-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RussianRouletteChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

@@ -9,20 +9,19 @@ import { MatCardModule } from '@angular/material/card';
 import { TranslationService } from '../../../shared/services/translation.service';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		UnusedContentComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		MatDividerModule,
-		MatCardModule,
-		TranslocoModule,
-	],
-	templateUrl: './chloe.component.html',
-	styleUrl: './chloe.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        UnusedContentComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        MatDividerModule,
+        MatCardModule,
+        TranslocoModule,
+    ],
+    templateUrl: './chloe.component.html',
+    styleUrl: './chloe.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChloeComponent implements OnInit {
 	constructor(

@@ -16,24 +16,23 @@ import { UnlockType } from '../../../shared/enums/unlock-type.enum';
 import { ConditionGroupComponent } from '../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatCardModule,
-		DialogueLineComponent,
-		UnlockConditionComponent,
-		ConditionedContentComponent,
-		RouterLink,
-		UnusedContentComponent,
-		MatDividerModule,
-		RelationComponent,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './endings.component.html',
-	styleUrl: './endings.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatCardModule,
+        DialogueLineComponent,
+        UnlockConditionComponent,
+        ConditionedContentComponent,
+        RouterLink,
+        UnusedContentComponent,
+        MatDividerModule,
+        RelationComponent,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './endings.component.html',
+    styleUrl: './endings.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EndingsComponent {
 	UnlockType = UnlockType;

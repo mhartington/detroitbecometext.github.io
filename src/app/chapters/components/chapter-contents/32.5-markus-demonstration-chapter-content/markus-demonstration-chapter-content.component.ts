@@ -23,25 +23,24 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		UnusedContentComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		RelationComponent,
-		MatDividerModule,
-		RouterLink,
-		PressDirtyBombComponent,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './markus-demonstration-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        UnusedContentComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        RelationComponent,
+        MatDividerModule,
+        RouterLink,
+        PressDirtyBombComponent,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './markus-demonstration-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MarkusDemonstrationChapterContentComponent
 	implements AfterViewInit

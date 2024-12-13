@@ -10,26 +10,25 @@ import {
 } from '../../../shared/services/item-navigation.service';
 
 @Component({
-	standalone: true,
-	providers: [
-		{
-			provide: ITEM_URL_TOKEN,
-			useValue: '/soundtrack',
-		},
-		{
-			provide: DATA_SERVICE_TOKEN,
-			useExisting: SoundtrackService,
-		},
-		ItemNavigationService,
-	],
-	imports: [
-		CommonModule,
-		ItemNavigationCardComponent,
-		SoundtrackItemDetailsComponent,
-	],
-	templateUrl: './soundtrack.component.html',
-	styleUrl: './soundtrack.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [
+        {
+            provide: ITEM_URL_TOKEN,
+            useValue: '/soundtrack',
+        },
+        {
+            provide: DATA_SERVICE_TOKEN,
+            useExisting: SoundtrackService,
+        },
+        ItemNavigationService,
+    ],
+    imports: [
+        CommonModule,
+        ItemNavigationCardComponent,
+        SoundtrackItemDetailsComponent,
+    ],
+    templateUrl: './soundtrack.component.html',
+    styleUrl: './soundtrack.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SoundtrackComponent {
 	constructor(public readonly soundtrackService: SoundtrackService) {}

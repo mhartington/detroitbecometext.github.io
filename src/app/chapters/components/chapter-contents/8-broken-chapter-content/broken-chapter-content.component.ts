@@ -18,21 +18,20 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ConditionedContentComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnlockConditionComponent,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './broken-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ConditionedContentComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnlockConditionComponent,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './broken-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BrokenChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

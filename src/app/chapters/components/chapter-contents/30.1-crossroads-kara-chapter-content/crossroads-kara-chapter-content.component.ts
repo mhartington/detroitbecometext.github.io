@@ -23,25 +23,24 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		RelationComponent,
-		ScreensComponent,
-		BackgroundDialoguesComponent,
-		RouterLink,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './crossroads-kara-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        RelationComponent,
+        ScreensComponent,
+        BackgroundDialoguesComponent,
+        RouterLink,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './crossroads-kara-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CrossroadsKaraChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

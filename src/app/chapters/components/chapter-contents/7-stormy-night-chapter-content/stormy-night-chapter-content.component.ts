@@ -19,22 +19,21 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ConditionedContentComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnlockConditionComponent,
-		RouterLink,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './stormy-night-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ConditionedContentComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnlockConditionComponent,
+        RouterLink,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './stormy-night-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StormyNightChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

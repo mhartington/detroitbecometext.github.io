@@ -20,18 +20,17 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationLinkComponent } from '../navigation-link/navigation-link.component';
 
 @Component({
-	selector: 'app-item-navigation-card',
-	standalone: true,
-	imports: [
-		CommonModule,
-		MatCardModule,
-		MatDividerModule,
-		TranslocoModule,
-		NavigationLinkComponent,
-	],
-	templateUrl: './item-navigation-card.component.html',
-	styleUrl: './item-navigation-card.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-item-navigation-card',
+    imports: [
+        CommonModule,
+        MatCardModule,
+        MatDividerModule,
+        TranslocoModule,
+        NavigationLinkComponent,
+    ],
+    templateUrl: './item-navigation-card.component.html',
+    styleUrl: './item-navigation-card.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ItemNavigationCardComponent<T extends DataItem> {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any

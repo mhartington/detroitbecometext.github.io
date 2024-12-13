@@ -24,25 +24,24 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		UnlockConditionComponent,
-		RouterLink,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './capitol-park-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        UnlockConditionComponent,
+        RouterLink,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './capitol-park-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CapitolParkChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

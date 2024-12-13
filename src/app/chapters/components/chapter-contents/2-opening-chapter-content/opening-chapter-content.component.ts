@@ -12,17 +12,16 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { UnusedContentComponent } from '../../../../shared/components/unused-content/unused-content.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		TranslocoModule,
-		UnusedContentComponent,
-	],
-	templateUrl: './opening-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        TranslocoModule,
+        UnusedContentComponent,
+    ],
+    templateUrl: './opening-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class OpeningChapterContentComponent implements AfterViewInit {
 	constructor(

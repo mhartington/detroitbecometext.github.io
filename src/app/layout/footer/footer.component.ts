@@ -6,12 +6,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-	selector: 'app-footer',
-	standalone: true,
-	imports: [CommonModule, RouterLink, FontAwesomeModule, MatTooltipModule],
-	templateUrl: './footer.component.html',
-	styleUrl: './footer.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-footer',
+    imports: [CommonModule, RouterLink, FontAwesomeModule, MatTooltipModule],
+    templateUrl: './footer.component.html',
+    styleUrl: './footer.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
 	faGithub = faGithub;

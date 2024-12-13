@@ -22,24 +22,23 @@ import { UnusedContentComponent } from '../../../../shared/components/unused-con
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnlockConditionComponent,
-		RelationComponent,
-		ConditionedContentComponent,
-		RouterLink,
-		TranslocoModule,
-		UnusedContentComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './the-bridge-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnlockConditionComponent,
+        RelationComponent,
+        ConditionedContentComponent,
+        RouterLink,
+        TranslocoModule,
+        UnusedContentComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './the-bridge-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TheBridgeChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

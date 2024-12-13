@@ -12,12 +12,11 @@ import { RelationName } from '../../enums/relation-name.enum';
 import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
-	selector: 'app-relation',
-	standalone: true,
-	imports: [CommonModule, TranslocoModule],
-	templateUrl: './relation.component.html',
-	styleUrl: './relation.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-relation',
+    imports: [CommonModule, TranslocoModule],
+    templateUrl: './relation.component.html',
+    styleUrl: './relation.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RelationComponent implements OnInit {
 	@Input({ required: true }) public name: RelationName | null = null;

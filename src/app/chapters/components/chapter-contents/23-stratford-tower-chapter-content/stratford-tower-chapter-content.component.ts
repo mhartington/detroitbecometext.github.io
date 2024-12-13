@@ -24,25 +24,24 @@ import { ObservationComponent } from '../../../../shared/components/observation/
 import { ObservationItemComponent } from '../../../../shared/components/observation-item/observation-item.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnlockConditionComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		UnusedContentComponent,
-		TranslocoModule,
-		ConditionGroupComponent,
-		ObservationComponent,
-		ObservationItemComponent,
-	],
-	templateUrl: './stratford-tower-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnlockConditionComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        UnusedContentComponent,
+        TranslocoModule,
+        ConditionGroupComponent,
+        ObservationComponent,
+        ObservationItemComponent,
+    ],
+    templateUrl: './stratford-tower-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class StratfordTowerChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

@@ -21,30 +21,27 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ObservationComponent } from '../../../../shared/components/observation/observation.component';
 import { ObservationItemComponent } from '../../../../shared/components/observation-item/observation-item.component';
 import { UnusedContentComponent } from '../../../../shared/components/unused-content/unused-content.component';
-import { RouterLink } from '@angular/router';
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		RelationComponent,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		UnusedContentComponent,
-		RouterLink,
-		ConditionGroupComponent,
-	],
-	templateUrl: './partners-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        RelationComponent,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        UnusedContentComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './partners-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PartnersChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

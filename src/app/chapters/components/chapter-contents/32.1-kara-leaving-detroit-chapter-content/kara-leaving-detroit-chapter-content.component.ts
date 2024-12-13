@@ -23,24 +23,23 @@ import { UnusedContentComponent } from '../../../../shared/components/unused-con
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		RelationComponent,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		RouterLink,
-		MatDividerModule,
-		TranslocoModule,
-		UnusedContentComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './kara-leaving-detroit-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        RelationComponent,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        RouterLink,
+        MatDividerModule,
+        TranslocoModule,
+        UnusedContentComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './kara-leaving-detroit-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class KaraLeavingDetroitChapterContentComponent
 	implements AfterViewInit

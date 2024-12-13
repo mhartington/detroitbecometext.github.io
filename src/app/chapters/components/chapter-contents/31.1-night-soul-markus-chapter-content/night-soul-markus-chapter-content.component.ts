@@ -22,24 +22,23 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		RouterLink,
-		MatDividerModule,
-		RelationComponent,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		UnusedContentComponent,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './night-soul-markus-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        RouterLink,
+        MatDividerModule,
+        RelationComponent,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        UnusedContentComponent,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './night-soul-markus-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NightSoulMarkusChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

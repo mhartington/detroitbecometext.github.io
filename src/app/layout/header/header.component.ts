@@ -25,20 +25,19 @@ import { TextDirectionService } from '../../shared/services/text-direction.servi
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-	selector: 'app-header',
-	standalone: true,
-	imports: [
-		CommonModule,
-		FontAwesomeModule,
-		RouterLink,
-		ThemeToggleComponent,
-		LangPickerComponent,
-		LangPickerToggleComponent,
-		MatTooltipModule,
-	],
-	templateUrl: './header.component.html',
-	styleUrl: './header.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-header',
+    imports: [
+        CommonModule,
+        FontAwesomeModule,
+        RouterLink,
+        ThemeToggleComponent,
+        LangPickerComponent,
+        LangPickerToggleComponent,
+        MatTooltipModule,
+    ],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent {
 	@ViewChild('langToggle', { read: ElementRef })

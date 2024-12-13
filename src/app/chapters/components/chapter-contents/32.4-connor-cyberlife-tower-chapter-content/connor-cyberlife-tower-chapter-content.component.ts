@@ -20,23 +20,22 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		RouterLink,
-		UnusedContentComponent,
-		MatDividerModule,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './connor-cyberlife-tower-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        RouterLink,
+        UnusedContentComponent,
+        MatDividerModule,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './connor-cyberlife-tower-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConnorCyberlifeTowerChapterContentComponent
 	implements AfterViewInit

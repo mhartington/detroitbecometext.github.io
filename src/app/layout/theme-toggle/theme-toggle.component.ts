@@ -13,12 +13,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
-	selector: 'app-theme-toggle',
-	standalone: true,
-	imports: [CommonModule, FontAwesomeModule, MatTooltipModule],
-	templateUrl: './theme-toggle.component.html',
-	styleUrl: './theme-toggle.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-theme-toggle',
+    imports: [CommonModule, FontAwesomeModule, MatTooltipModule],
+    templateUrl: './theme-toggle.component.html',
+    styleUrl: './theme-toggle.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ThemeToggleComponent {
 	@Input() switchIconColor: boolean = false;

@@ -9,19 +9,18 @@ import { UnlockType } from '../../../../../shared/enums/unlock-type.enum';
 import { ConditionGroupComponent } from '../../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	selector: 'app-background-dialogues',
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		RouterLink,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './background-dialogues.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-background-dialogues',
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        RouterLink,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './background-dialogues.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BackgroundDialoguesComponent {
 	UnlockType = UnlockType;

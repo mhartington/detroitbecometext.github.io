@@ -5,12 +5,11 @@ import { ChapterNavigationService } from '../../../shared/services/chapter-navig
 import { NavigationLinkComponent } from '../../../shared/components/navigation-link/navigation-link.component';
 
 @Component({
-	selector: 'app-chapter-nav',
-	standalone: true,
-	imports: [CommonModule, NavigationLinkComponent],
-	templateUrl: './chapter-nav.component.html',
-	styleUrl: './chapter-nav.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-chapter-nav',
+    imports: [CommonModule, NavigationLinkComponent],
+    templateUrl: './chapter-nav.component.html',
+    styleUrl: './chapter-nav.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChapterNavComponent {
 	faAngleLeft = faAngleLeft;

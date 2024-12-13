@@ -8,19 +8,18 @@ import { TranslationService } from '../../../shared/services/translation.service
 import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
-	selector: 'app-magazine-item-details',
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatCardModule,
-		MatChipsModule,
-		MatDividerModule,
-		TranslocoModule,
-	],
-	templateUrl: './magazine-item-details.component.html',
-	styleUrl: './magazine-item-details.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-magazine-item-details',
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatCardModule,
+        MatChipsModule,
+        MatDividerModule,
+        TranslocoModule,
+    ],
+    templateUrl: './magazine-item-details.component.html',
+    styleUrl: './magazine-item-details.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MagazineItemDetailsComponent {
 	@Input({ required: true }) public item: Magazine | null = null;

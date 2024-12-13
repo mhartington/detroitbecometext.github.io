@@ -23,24 +23,23 @@ import { ChapterTocService } from '../../../../shared/services/chapter-toc.servi
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		UnlockConditionComponent,
-		UnusedContentComponent,
-		RouterLink,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './pirates-cove-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        UnlockConditionComponent,
+        UnusedContentComponent,
+        RouterLink,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './pirates-cove-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PiratesCoveChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

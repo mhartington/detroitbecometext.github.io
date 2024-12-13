@@ -6,12 +6,11 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-	selector: 'app-lang-picker-toggle',
-	standalone: true,
-	imports: [CommonModule, FontAwesomeModule, MatTooltipModule],
-	templateUrl: './lang-picker-toggle.component.html',
-	styleUrl: './lang-picker-toggle.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-lang-picker-toggle',
+    imports: [CommonModule, FontAwesomeModule, MatTooltipModule],
+    templateUrl: './lang-picker-toggle.component.html',
+    styleUrl: './lang-picker-toggle.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LangPickerToggleComponent {
 	@Input() switchCaretColor: boolean = false;

@@ -15,20 +15,19 @@ import { ObservationItemComponent } from '../../../../shared/components/observat
 import { UnusedContentComponent } from '../../../../shared/components/unused-content/unused-content.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		UnusedContentComponent,
-	],
-	templateUrl: './from-the-dead-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        UnusedContentComponent,
+    ],
+    templateUrl: './from-the-dead-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FromTheDeadChapterContentComponent implements AfterViewInit {
 	constructor(

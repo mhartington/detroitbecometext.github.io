@@ -24,26 +24,25 @@ import { ObservationItemComponent } from '../../../../shared/components/observat
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		UnlockConditionComponent,
-		RouterLink,
-		TranslocoModule,
-		UnusedContentComponent,
-		ObservationComponent,
-		ObservationItemComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './meet-kamski-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        UnlockConditionComponent,
+        RouterLink,
+        TranslocoModule,
+        UnusedContentComponent,
+        ObservationComponent,
+        ObservationItemComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './meet-kamski-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MeetKamskiChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

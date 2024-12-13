@@ -16,19 +16,18 @@ import { RelationType } from '../../../../shared/enums/relation-type.enum';
 import { ChapterTocService } from '../../../../shared/services/chapter-toc.service';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		RelationComponent,
-		UnusedContentComponent,
-		TranslocoModule,
-	],
-	templateUrl: './time-to-decide-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        RelationComponent,
+        UnusedContentComponent,
+        TranslocoModule,
+    ],
+    templateUrl: './time-to-decide-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TimeToDecideChapterContentComponent implements AfterViewInit {
 	RelationName = RelationName;

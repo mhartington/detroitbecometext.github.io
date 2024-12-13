@@ -13,19 +13,18 @@ import { MatListModule } from '@angular/material/list';
 import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
-	selector: 'app-sidenav',
-	standalone: true,
-	imports: [
-		CommonModule,
-		RouterLink,
-		MatExpansionModule,
-		MatDividerModule,
-		MatListModule,
-		TranslocoModule,
-	],
-	templateUrl: './sidenav.component.html',
-	styleUrl: './sidenav.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-sidenav',
+    imports: [
+        CommonModule,
+        RouterLink,
+        MatExpansionModule,
+        MatDividerModule,
+        MatListModule,
+        TranslocoModule,
+    ],
+    templateUrl: './sidenav.component.html',
+    styleUrl: './sidenav.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidenavComponent {
 	@Input({ required: true }) sidenav: MatSidenav | null = null;

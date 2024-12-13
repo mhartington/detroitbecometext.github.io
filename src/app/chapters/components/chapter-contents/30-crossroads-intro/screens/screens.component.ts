@@ -12,21 +12,20 @@ import { ConditionGroupComponent } from '../../../../../shared/components/condit
 import { UnusedContentComponent } from '../../../../../shared/components/unused-content/unused-content.component';
 
 @Component({
-	selector: 'app-screens',
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		UnlockConditionComponent,
-		ConditionedContentComponent,
-		RouterLink,
-		TranslocoModule,
-		ConditionGroupComponent,
-		UnusedContentComponent,
-	],
-	templateUrl: './screens.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-screens',
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        UnlockConditionComponent,
+        ConditionedContentComponent,
+        RouterLink,
+        TranslocoModule,
+        ConditionGroupComponent,
+        UnusedContentComponent,
+    ],
+    templateUrl: './screens.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ScreensComponent {
 	UnlockType = UnlockType;

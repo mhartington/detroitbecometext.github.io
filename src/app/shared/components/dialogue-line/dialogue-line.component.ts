@@ -3,12 +3,11 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { TranslocoService } from '@jsverse/transloco';
 
 @Component({
-	selector: 'app-dialogue-line',
-	standalone: true,
-	imports: [CommonModule],
-	templateUrl: './dialogue-line.component.html',
-	styleUrl: './dialogue-line.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-dialogue-line',
+    imports: [CommonModule],
+    templateUrl: './dialogue-line.component.html',
+    styleUrl: './dialogue-line.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DialogueLineComponent {
 	@Input({ required: true }) name: string = '';

@@ -7,18 +7,17 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
-	standalone: true,
-	imports: [
-		CommonModule,
-		MatSidenavModule,
-		RouterOutlet,
-		SidenavComponent,
-		HeaderComponent,
-		FooterComponent,
-		RouterLink,
-	],
-	templateUrl: './base-layout.component.html',
-	styleUrl: './base-layout.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CommonModule,
+        MatSidenavModule,
+        RouterOutlet,
+        SidenavComponent,
+        HeaderComponent,
+        FooterComponent,
+        RouterLink,
+    ],
+    templateUrl: './base-layout.component.html',
+    styleUrl: './base-layout.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BaseLayoutComponent {}

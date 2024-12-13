@@ -7,18 +7,17 @@ import { TranslationService } from '../../../../shared/services/translation.serv
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	selector: 'app-press-dirty-bomb',
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		DialogueLineComponent,
-		ConditionedContentComponent,
-		TranslocoModule,
-		ConditionGroupComponent,
-	],
-	templateUrl: './press-dirty-bomb.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-press-dirty-bomb',
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        DialogueLineComponent,
+        ConditionedContentComponent,
+        TranslocoModule,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './press-dirty-bomb.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PressDirtyBombComponent {
 	constructor(protected readonly translationService: TranslationService) {}

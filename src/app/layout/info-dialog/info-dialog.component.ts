@@ -22,26 +22,25 @@ import { ObservationItemComponent } from '../../shared/components/observation-it
 import { ConditionGroupComponent } from '../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	selector: 'app-info-dialog',
-	standalone: true,
-	imports: [
-		CommonModule,
-		MatDialogModule,
-		MatDividerModule,
-		MatButtonModule,
-		ConditionedContentComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		RelationComponent,
-		UnlockConditionComponent,
-		UnusedContentComponent,
-		ObservationComponent,
-		ObservationItemComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './info-dialog.component.html',
-	styleUrl: './info-dialog.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-info-dialog',
+    imports: [
+        CommonModule,
+        MatDialogModule,
+        MatDividerModule,
+        MatButtonModule,
+        ConditionedContentComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        RelationComponent,
+        UnlockConditionComponent,
+        UnusedContentComponent,
+        ObservationComponent,
+        ObservationItemComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './info-dialog.component.html',
+    styleUrl: './info-dialog.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InfoDialogComponent {
 	UnlockType = UnlockType;

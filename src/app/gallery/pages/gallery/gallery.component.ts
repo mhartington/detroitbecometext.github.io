@@ -10,26 +10,25 @@ import {
 } from '../../../shared/services/item-navigation.service';
 
 @Component({
-	standalone: true,
-	providers: [
-		{
-			provide: ITEM_URL_TOKEN,
-			useValue: '/gallery',
-		},
-		{
-			provide: DATA_SERVICE_TOKEN,
-			useExisting: GalleryService,
-		},
-		ItemNavigationService,
-	],
-	imports: [
-		CommonModule,
-		ItemNavigationCardComponent,
-		GalleryItemDetailsComponent,
-	],
-	templateUrl: './gallery.component.html',
-	styleUrl: './gallery.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [
+        {
+            provide: ITEM_URL_TOKEN,
+            useValue: '/gallery',
+        },
+        {
+            provide: DATA_SERVICE_TOKEN,
+            useExisting: GalleryService,
+        },
+        ItemNavigationService,
+    ],
+    imports: [
+        CommonModule,
+        ItemNavigationCardComponent,
+        GalleryItemDetailsComponent,
+    ],
+    templateUrl: './gallery.component.html',
+    styleUrl: './gallery.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GalleryComponent {
 	constructor(public readonly galleryService: GalleryService) {}

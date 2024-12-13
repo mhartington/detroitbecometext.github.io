@@ -6,12 +6,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterLink } from '@angular/router';
 
 @Component({
-	selector: 'app-navigation-link',
-	standalone: true,
-	imports: [CommonModule, FontAwesomeModule, RouterLink],
-	templateUrl: './navigation-link.component.html',
-	styleUrl: './navigation-link.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-navigation-link',
+    imports: [CommonModule, FontAwesomeModule, RouterLink],
+    templateUrl: './navigation-link.component.html',
+    styleUrl: './navigation-link.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavigationLinkComponent {
 	@Input({ required: true }) public position: 'start' | 'end' = 'start';

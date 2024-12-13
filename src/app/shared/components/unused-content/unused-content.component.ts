@@ -8,12 +8,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-	selector: 'app-unused-content',
-	standalone: true,
-	imports: [CommonModule, FontAwesomeModule, MatTooltipModule],
-	templateUrl: './unused-content.component.html',
-	styleUrl: './unused-content.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: 'app-unused-content',
+    imports: [CommonModule, FontAwesomeModule, MatTooltipModule],
+    templateUrl: './unused-content.component.html',
+    styleUrl: './unused-content.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UnusedContentComponent {
 	faCommentSlash = faCommentSlash;

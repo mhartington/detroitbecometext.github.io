@@ -23,24 +23,23 @@ import { RouterLink } from '@angular/router';
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnlockConditionComponent,
-		UnusedContentComponent,
-		ConditionedContentComponent,
-		RelationComponent,
-		TranslocoModule,
-		RouterLink,
-		ConditionGroupComponent,
-	],
-	templateUrl: './midnight-train-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnlockConditionComponent,
+        UnusedContentComponent,
+        ConditionedContentComponent,
+        RelationComponent,
+        TranslocoModule,
+        RouterLink,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './midnight-train-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MidnightTrainChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

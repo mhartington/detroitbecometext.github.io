@@ -24,25 +24,24 @@ import { ObservationItemComponent } from '../../../../shared/components/observat
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		MatDividerModule,
-		DialogueLineComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		UnusedContentComponent,
-		ConditionedContentComponent,
-		UnlockConditionComponent,
-		RelationComponent,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './eden-club-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        MatDividerModule,
+        DialogueLineComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        UnusedContentComponent,
+        ConditionedContentComponent,
+        UnlockConditionComponent,
+        RelationComponent,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './eden-club-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EdenClubChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;

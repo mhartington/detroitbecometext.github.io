@@ -23,24 +23,23 @@ import { ObservationItemComponent } from '../../../../shared/components/observat
 import { ConditionGroupComponent } from '../../../../shared/components/condition-group/condition-group.component';
 
 @Component({
-	standalone: true,
-	providers: [TranslationService],
-	imports: [
-		CommonModule,
-		UnlockConditionComponent,
-		DialogueLineComponent,
-		RelationComponent,
-		ChoiceGroupComponent,
-		ChoiceItemComponent,
-		ConditionedContentComponent,
-		MatDividerModule,
-		TranslocoModule,
-		ObservationComponent,
-		ObservationItemComponent,
-		ConditionGroupComponent,
-	],
-	templateUrl: './new-home-chapter-content.component.html',
-	changeDetection: ChangeDetectionStrategy.OnPush,
+    providers: [TranslationService],
+    imports: [
+        CommonModule,
+        UnlockConditionComponent,
+        DialogueLineComponent,
+        RelationComponent,
+        ChoiceGroupComponent,
+        ChoiceItemComponent,
+        ConditionedContentComponent,
+        MatDividerModule,
+        TranslocoModule,
+        ObservationComponent,
+        ObservationItemComponent,
+        ConditionGroupComponent,
+    ],
+    templateUrl: './new-home-chapter-content.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NewHomeChapterContentComponent implements AfterViewInit {
 	UnlockType = UnlockType;
