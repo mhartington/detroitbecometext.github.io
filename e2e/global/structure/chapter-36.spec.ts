@@ -1,13 +1,12 @@
-import { test, expect } from '@playwright/test';
-import { NavigableItemPage } from '../pages/NavigableItemPage';
-import { fail } from 'assert';
 
-for (let chapterId = 1; chapterId <= 40; chapterId++) {
-	test(`Chapter ${chapterId} should have ids defined for all headings`, async ({
+import { test, expect } from '@playwright/test';
+import { NavigableItemPage } from '../../pages/NavigableItemPage';
+import { fail } from 'assert';
+test('Chapter 36 should have ids defined for all headings', async ({
 		page,
 	}) => {
 		const currentPage = new NavigableItemPage('chapters', page);
-		await currentPage.goToId(chapterId);
+		await currentPage.goToId(36);
 
 		for (const heading of await page
 			.locator('.chapter-content')
@@ -17,11 +16,11 @@ for (let chapterId = 1; chapterId <= 40; chapterId++) {
 		}
 	});
 
-	test(`Chapter ${chapterId} should have labelled sections`, async ({
+	test('Chapter 36 should have labelled sections', async ({
 		page,
 	}) => {
 		const currentPage = new NavigableItemPage('chapters', page);
-		await currentPage.goToId(chapterId);
+		await currentPage.goToId(36);
 
 		for (const section of await page.locator('section').all()) {
 			await expect(section).toHaveAttribute('aria-labelledby');
@@ -35,11 +34,11 @@ for (let chapterId = 1; chapterId <= 40; chapterId++) {
 		}
 	});
 
-	test(`Chapter ${chapterId} should not have nested paragraphs`, async ({
+	test('Chapter 36 should not have nested paragraphs', async ({
 		page,
 	}) => {
 		const currentPage = new NavigableItemPage('chapters', page);
-		await currentPage.goToId(chapterId);
+		await currentPage.goToId(36);
 
 		const paragraphsWithParagraphs = await page
 			.locator('p', { has: page.locator('p') })
@@ -48,11 +47,11 @@ for (let chapterId = 1; chapterId <= 40; chapterId++) {
 		expect(paragraphsWithParagraphs).toHaveLength(0);
 	});
 
-	test(`Chapter ${chapterId} should have section for every heading`, async ({
+	test('Chapter 36 should have section for every heading', async ({
 		page,
 	}) => {
 		const currentPage = new NavigableItemPage('chapters', page);
-		await currentPage.goToId(chapterId);
+		await currentPage.goToId(36);
 
 		const headingCount = await page
 			.locator('.chapter-content')
@@ -66,11 +65,11 @@ for (let chapterId = 1; chapterId <= 40; chapterId++) {
 		expect(headingCount).toBe(sectionCount);
 	});
 
-	test(`Chapter ${chapterId} should have a condition group for each condition content`, async ({
+	test('Chapter 36 should have a condition group for each condition content', async ({
 		page,
 	}) => {
 		const currentPage = new NavigableItemPage('chapters', page);
-		await currentPage.goToId(chapterId);
+		await currentPage.goToId(36);
 
 		const conditionContents = await page
 			.locator('app-conditioned-content')
@@ -98,4 +97,3 @@ for (let chapterId = 1; chapterId <= 40; chapterId++) {
 			fail(errors.join('\n'));
 		}
 	});
-}
