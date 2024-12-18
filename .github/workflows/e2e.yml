@@ -42,5 +42,8 @@ jobs:
     - run: npx playwright install-deps
       if: steps.playwright-cache.outputs.cache-hit != 'true'
 
+    - name: Enable Cloud Taks Distribution
+      run: npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
+
     - name: Run Playwright tests
-      run: npx nx affected -t build e2e
+      run: npx nx affected -t build e2e-ci
