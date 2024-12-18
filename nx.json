@@ -6,6 +6,10 @@
 			"dependsOn": ["^build"],
 			"inputs": ["production", "^production"]
 		},
+		"e2e": {
+			"cache": true,
+			"dependsOn": ["^build"]
+		},
 		"lint": {
 			"cache": true,
 			"inputs": ["default", "{workspaceRoot}/eslint.config.js"]
